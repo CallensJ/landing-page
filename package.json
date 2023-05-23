@@ -4,7 +4,7 @@
   "description": "clipboard landing page Front End Mentor challenge",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass styles/main.scss styles/style.css"
+    "compile:sass": "node-sass styles/main.scss styles/style.css -w"
   },
   "repository": {
     "type": "git",

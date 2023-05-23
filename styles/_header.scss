@@ -1,0 +1,21 @@
+header{
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+
+    .header-container{
+        max-width: 70rem;
+        margin: 0 auto;
+       
+
+        p{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        button{
+            margin-top: 2rem;
+            margin-right: 1rem;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.options-container{
+    max-width: 70rem;
+    margin: 10rem auto;
+    text-align: center;
+
+}
+
+.option-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .option-1-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 60%;
+        margin-left: 10rem;
+        
+    }
+
+}

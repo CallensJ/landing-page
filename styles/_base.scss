@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 //COLOR VARIABLES
-$color-primary-cyan: hsl(171, 66%, 44%);
-$color-primary-blue: hsl(233, 100%, 69%);
+$color-primary-cyan: #26baa4;
+$color-primary-blue: #6173ff;
 
 $color-neutral-dark-grayblue: hsl(210, 10%, 33%);
 $color-neutral-grayblue: hsl(201, 11%, 66%);
@@ -37,4 +37,12 @@ body{
     font-weight: 400;
     font-size: 1.8rem; // 18px
     line-height: 1.6;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    
+}
+header{
+    text-align: center;
 }
