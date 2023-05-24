@@ -22,7 +22,8 @@ body {
 
 .container {
   width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 1px solid black; }
 
 header {
   text-align: center; }
@@ -85,3 +86,12 @@ header {
     justify-content: space-evenly;
     max-width: 60%;
     margin-left: 10rem; }
+
+.section-2 {
+  margin-top: 20rem;
+  text-align: center; }
+  .section-2 p {
+    width: 70rem;
+    margin: 0 auto; }
+  .section-2 .device-image {
+    margin-top: 10rem; }
