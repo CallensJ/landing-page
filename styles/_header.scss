@@ -19,3 +19,24 @@ header{
         }
     }
 }
+
+@media  (max-width: $bp-small){
+    .header-container{
+        border: 1px solid black;
+        display: flex;
+        
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .logo{
+            max-width: 6rem;
+        
+        }
+
+        .btn-ios,.btn-mac{
+            
+            width: 80%;
+        }
+    }
+    }

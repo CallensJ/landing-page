@@ -1,0 +1,51 @@
+.section-3 {
+  text-align: center;
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    justify-content: space-around;
+
+    .card {
+      width: 28%;
+
+      .card-icon {
+        margin-bottom: 3rem;
+      }
+
+
+    }
+  }
+
+  .sponsors{
+    
+    display: flex;
+    justify-content: space-around;
+
+    img{
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+    }
+  }
+
+  .ending{
+    max-width: 50%;
+    margin: 15rem auto;
+    
+
+    .heading-2{
+      margin-bottom: 2rem;
+    }
+
+    p{
+      margin-bottom: 2rem;
+    }
+    
+    button{
+      margin-left: 1rem;
+    }
+  }
+}

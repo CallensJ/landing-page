@@ -9,7 +9,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
-  @media only screen and (max-width: 37.5rem) {
+  @media only screen and (max-width: 375px) {
     html {
       font-size: 50%; } }
 
@@ -22,11 +22,15 @@ body {
 
 .container {
   width: 1440px;
-  margin: 0 auto;
-  border: 1px solid black; }
+  margin: 0 auto; }
 
 header {
   text-align: center; }
+
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
+    border: 2px dashed red; } }
 
 .heading-1, .heading-2, .heading-3 {
   font-weight: 600;
@@ -72,6 +76,41 @@ header {
       margin-top: 2rem;
       margin-right: 1rem; }
 
+@media (max-width: 375px) {
+  .header-container {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .header-container .logo {
+      max-width: 6rem; }
+    .header-container .btn-ios, .header-container .btn-mac {
+      width: 80%; } }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10rem; }
+  .footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 40rem; }
+    .footer .footer-links .link {
+      text-decoration: none;
+      color: #4c545d; }
+    .footer .footer-links .footer-links-1 {
+      display: flex;
+      flex-direction: column; }
+  .footer .logo {
+    width: 50px;
+    height: 50px; }
+  .footer .social-icons {
+    width: 12rem;
+    display: flex;
+    justify-content: space-between; }
+
 .options-container {
   max-width: 70rem;
   margin: 10rem auto;
@@ -95,3 +134,32 @@ header {
     margin: 0 auto; }
   .section-2 .device-image {
     margin-top: 10rem; }
+
+.section-3 {
+  text-align: center; }
+  .section-3 .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    justify-content: space-around; }
+    .section-3 .cards .card {
+      width: 28%; }
+      .section-3 .cards .card .card-icon {
+        margin-bottom: 3rem; }
+  .section-3 .sponsors {
+    display: flex;
+    justify-content: space-around; }
+    .section-3 .sponsors img {
+      width: 100px;
+      height: auto;
+      object-fit: contain; }
+  .section-3 .ending {
+    max-width: 50%;
+    margin: 15rem auto; }
+    .section-3 .ending .heading-2 {
+      margin-bottom: 2rem; }
+    .section-3 .ending p {
+      margin-bottom: 2rem; }
+    .section-3 .ending button {
+      margin-left: 1rem; }

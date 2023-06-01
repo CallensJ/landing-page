@@ -19,7 +19,7 @@ $font-primary: 'Bai Jamjuree', sans-serif;
     box-sizing: inherit;
 }
 
-$bp-small: 37.5rem;    // 375px;
+$bp-small: 375px;    // 375px;
 
 
 html {
@@ -41,9 +41,16 @@ body{
 .container{
     width: 1440px;
     margin: 0 auto;
-    border: 1px solid black;
+    
     
 }
 header{
     text-align: center;
+}
+
+@media  (max-width: $bp-small){
+.container{
+    width: $bp-small;
+    border: 2px dashed red;
+}
 }
