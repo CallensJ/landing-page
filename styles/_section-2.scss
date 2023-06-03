@@ -3,11 +3,24 @@
   text-align: center;
 
   p {
-    width: 70rem;
+    max-width: 70rem;
     margin: 0 auto;
   }
 
   .device-image {
     margin-top: 10rem;
+    max-width: 100%;
   }
 }
+
+
+@media (max-width: $bp-small){
+   
+  .section-2{
+    margin-bottom: 10rem;
+    p{
+      padding: 2rem;
+    }
+  }
+  
+  }

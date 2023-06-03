@@ -107,9 +107,24 @@ header {
     width: 50px;
     height: 50px; }
   .footer .social-icons {
-    width: 12rem;
+    width: 15rem;
     display: flex;
     justify-content: space-between; }
+
+@media (max-width: 375px) {
+  footer {
+    flex-direction: column; }
+    footer .footer-links {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      footer .footer-links .footer-links-1 {
+        margin-top: 1rem; }
+        footer .footer-links .footer-links-1 .link {
+          margin-top: 1rem; }
+    footer .social-icons {
+      margin-top: 3rem; } }
 
 .options-container {
   max-width: 70rem;
@@ -118,7 +133,10 @@ header {
 
 .option-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem; }
+  .option-1 .computer-image {
+    max-width: 100%; }
   .option-1 .option-1-content {
     display: flex;
     flex-direction: column;
@@ -126,20 +144,31 @@ header {
     max-width: 60%;
     margin-left: 10rem; }
 
+@media (max-width: 375px) {
+  .options .option-1-content div {
+    margin-top: 5rem;
+    text-align: center; } }
+
 .section-2 {
   margin-top: 20rem;
   text-align: center; }
   .section-2 p {
-    width: 70rem;
+    max-width: 70rem;
     margin: 0 auto; }
   .section-2 .device-image {
-    margin-top: 10rem; }
+    margin-top: 10rem;
+    max-width: 100%; }
+
+@media (max-width: 375px) {
+  .section-2 {
+    margin-bottom: 10rem; }
+    .section-2 p {
+      padding: 2rem; } }
 
 .section-3 {
   text-align: center; }
   .section-3 .cards {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 10rem;
     margin-bottom: 10rem;
     justify-content: space-around; }
@@ -155,7 +184,7 @@ header {
       height: auto;
       object-fit: contain; }
   .section-3 .ending {
-    max-width: 50%;
+    max-width: 70%;
     margin: 15rem auto; }
     .section-3 .ending .heading-2 {
       margin-bottom: 2rem; }
@@ -163,3 +192,22 @@ header {
       margin-bottom: 2rem; }
     .section-3 .ending button {
       margin-left: 1rem; }
+
+@media (max-width: 375px) {
+  .section-3 .cards {
+    flex-direction: column;
+    align-items: center; }
+    .section-3 .cards .card {
+      width: 100%;
+      margin-top: 2rem;
+      padding-top: 2rem; }
+  .section-3 .sponsors {
+    flex-direction: column;
+    align-items: center; }
+    .section-3 .sponsors img {
+      margin-top: 10rem; }
+  .section-3 .ending {
+    display: flex;
+    flex-direction: column; }
+    .section-3 .ending button {
+      margin-top: 2rem; } }
