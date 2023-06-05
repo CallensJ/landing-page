@@ -29,8 +29,7 @@ header {
 
 @media (max-width: 375px) {
   .container {
-    width: 375px;
-    border: 2px dashed red; } }
+    width: 375px; } }
 
 .heading-1, .heading-2, .heading-3 {
   font-weight: 600;
@@ -62,6 +61,12 @@ header {
   background-color: #6173ff;
   box-shadow: -1px 5px 0px -2px #3948b8; }
 
+.ios:hover {
+  background-color: #79e0d1; }
+
+.mac:hover {
+  background-color: #8d98f0; }
+
 header {
   background-image: url("../images/bg-header-desktop.png");
   background-repeat: no-repeat;
@@ -78,7 +83,6 @@ header {
 
 @media (max-width: 375px) {
   .header-container {
-    border: 1px solid black;
     display: flex;
     align-items: center;
     flex-direction: column;
